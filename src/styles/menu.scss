@@ -1,0 +1,79 @@
+.nav {
+
+  &-list__item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+
+  &-list__link {
+    padding: 6px 15px;
+
+    span {
+      svg {
+        width: inherit;
+        height: inherit;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &-list-top, &-sign-out {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-charade);
+  }
+
+}
+
+.icon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--color-silver);
+
+  &.main {
+    mask-image: url("~@/assets/main.svg");
+  }
+
+  &.structure {
+    mask-image: url("~@/assets/structure.svg");
+  }
+
+  &.bags {
+    mask-image: url("~@/assets/bags.svg");
+  }
+
+  &.cube {
+    mask-image: url("~@/assets/cube.svg");
+  }
+
+  &.bank {
+    mask-image: url("~@/assets/bank.svg");
+  }
+
+  &.nft {
+    mask-image: url("~@/assets/nft.svg");
+  }
+
+  &.megaphone {
+    mask-image: url("~@/assets/megaphone.svg");
+  }
+  &.settings {
+    mask-image: url("~@/assets/settings.svg");
+  }
+  &.information {
+    mask-image: url("~@/assets/information.svg");
+  }
+  &.sign-out {
+    mask-image: url("~@/assets/sign-out.svg");
+  }
+}
+
+.hide-sidebar {
+  width: 29px;height: 29px;
+  border-radius: 100%;
+  border: 2px solid var(--color-white);
+}

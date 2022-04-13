@@ -1,32 +1,27 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
-  </div>
+  <v-app id="app">
+    <v-container class="app-container pa-0 pt-4 d-flex align-start">
+      <Sidebar />
+      <Main/>
+    </v-container>
+  </v-app>
 </template>
 
-<style>
+<script>
+
+import Sidebar from "@/components/Sidebar";
+import Main from "@/components/Main";
+export default {
+  name: "App",
+  components: {
+    Sidebar,
+    Main,
+  },
+};
+</script>
+
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  background: var(--color-charade);
 }
 </style>
